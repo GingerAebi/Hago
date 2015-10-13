@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jaebong.hago" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GenderActivity"
+            android:label="@string/title_activity_gender" >
+        </activity>
+        <activity
+            android:name=".AgesActivity"
+            android:label="@string/title_activity_ages" >
+        </activity>
+        <activity
+            android:name=".AtmosphereActivity"
+            android:label="@string/title_activity_atmosphere" >
+        </activity>
+        <activity
+            android:name=".TallActivity"
+            android:label="@string/title_activity_tall" >
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_reslut" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+    </application>
+
+</manifest>

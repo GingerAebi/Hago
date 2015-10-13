@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_bright"
+            android:background="@color/PASTEL_YELLOW"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="마냥 밝음"
+                android:textColor="@color/PASTEL_GREEN"
+                android:id="@+id/textView_atmosphere_bright"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_shy"
+            android:background="@color/CREAMY"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="부끄북흐"
+                android:textColor="@color/PASTEL_ORANGE"
+                android:id="@+id/textView_atmosphere_shy"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_talkative"
+            android:background="@color/BRIGHT_GREEN"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="수다수다해"
+                android:textColor="@color/WHITE"
+                android:id="@+id/textView_atmosphere_talkative"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_gentle"
+            android:background="@color/GRAY_BLUE"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="젠틀친절"
+                android:textColor="@color/WHITE"
+                android:id="@+id/textView_atmosphere_gentler"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_cool"
+            android:background="@color/PASTEL_BLUE"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="쿨몽둥이"
+                android:textColor="@color/WHITE"
+                android:id="@+id/textView_atmosphere_cool"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_atmosphere_difficult"
+            android:background="@color/BRIGHT_VIOLET"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="까다로운"
+                android:textColor="@color/WHITE"
+                android:id="@+id/textView_atmosphere_difficult"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

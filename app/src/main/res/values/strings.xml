@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hago</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gender">GenderActivity</string>
+    <string name="title_activity_ages">AgesActivity</string>
+    <string name="title_activity_atmosphere">AtmosphereActivity</string>
+    <string name="title_activity_tall">TallActivity</string>
+    <string name="title_activity_reslut">ReslutActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+</resources>

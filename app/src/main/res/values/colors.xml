@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PASTEL_BLUE">#2183D5</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="CHERRY_RED">#C2123A</color>
+    <color name="PASTEL_GREEN">#317F40</color>
+    <color name="PASTEL_ORANGE">#BE482C</color>
+    <color name="CREAMY">#F4CCA2</color>
+    <color name="PASTEL_YELLOW">#FCFEA9</color>
+    <color name="BRIGHT_GREEN">#AABE47</color>
+    <color name="GRAY_BLUE">#3D7785</color>
+    <color name="BRIGHT_VIOLET">#8271FF</color>
+
+</resources>

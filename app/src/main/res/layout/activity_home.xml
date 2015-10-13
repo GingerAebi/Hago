@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layout_home_registerNew"
+        android:background="@color/PASTEL_GREEN">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="신규 등록"
+            android:textColor="@color/WHITE"
+            android:id="@+id/textView_home_registerNew"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/PASTEL_ORANGE"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layout_home_searchPerson">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="등록 조회"
+            android:textColor="@color/WHITE"
+            android:id="@+id/textView_home_searchPerson"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+</LinearLayout>
