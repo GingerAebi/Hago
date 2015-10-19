@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".HomeActivity"
+            android:name=".SelectActivities.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,19 +17,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GenderActivity"
+            android:name=".SelectActivities.GenderActivity"
             android:label="@string/title_activity_gender" >
         </activity>
         <activity
-            android:name=".AgesActivity"
+            android:name=".SelectActivities.AgesActivity"
             android:label="@string/title_activity_ages" >
         </activity>
         <activity
-            android:name=".AtmosphereActivity"
+            android:name=".SelectActivities.AtmosphereActivity"
             android:label="@string/title_activity_atmosphere" >
         </activity>
         <activity
-            android:name=".TallActivity"
+            android:name=".SelectActivities.TallActivity"
             android:label="@string/title_activity_tall" >
         </activity>
         <activity
@@ -39,6 +39,14 @@
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".SearchResultActivity"
+            android:label="@string/title_activity_search_result_actvity" >
         </activity>
     </application>
 

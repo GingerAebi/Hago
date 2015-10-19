@@ -1,9 +1,13 @@
-package jaebong.hago;
+package jaebong.hago.SelectActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import jaebong.hago.Enum.TALL;
+import jaebong.hago.Person;
+import jaebong.hago.R;
 
 public class TallActivity extends AppCompatActivity implements View.OnClickListener{
     private Person person;

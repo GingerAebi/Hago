@@ -7,6 +7,8 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+import jaebong.hago.SelectActivities.HomeActivity;
+
 /**
  * Created by JaeBong on 15. 10. 10..
  */

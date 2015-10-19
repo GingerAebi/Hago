@@ -1,10 +1,14 @@
-package jaebong.hago;
+package jaebong.hago.SelectActivities;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import jaebong.hago.Person;
+import jaebong.hago.R;
+import jaebong.hago.SearchActivity;
 
 public class HomeActivity extends AppCompatActivity {
 

@@ -2,87 +2,68 @@ package jaebong.hago;
 
 import java.io.Serializable;
 
-/**
- * Created by JaeBong on 15. 10. 9..
- */
+import jaebong.hago.Enum.AGES;
+import jaebong.hago.Enum.ATMOSPHERE;
+import jaebong.hago.Enum.GENDER;
+import jaebong.hago.Enum.TALL;
 
-interface GENDER{
-    int MAN = 1;
-    int WOMAN = 2;
-}
-
-interface AGES{
-    int TEENAGER = 10;
-    int YOUTH = 20;
-    int SENIOR = 30;
-    int MIDDLE_AGE = 40;
-
-}
-
-interface TALL{
-    int SHORT = 1000;
-    int SKINNY = 2000;
-    int NORMAL = 3000;
-    int FAT = 4000;
-
-}
-
-interface ATMOSPHERE{
-    int BRIGHT = 100;
-    int SHY = 200;
-    int TALKATIVE = 300;
-    int GENTLE = 400;
-    int COOL = 500;
-    int DIFFICULT = 600;
-
-
-}
 
 public class Person implements Serializable{
-    private int gender;
-    private int age;
-    private int atmosphere;
-    private int tall;
+    private GENDER gender;
+    private AGES age;
+    private ATMOSPHERE atmosphere;
+    private TALL tall;
+    private int menu;
     private long time;
 
     public Person(){}
 
-    public Person(int gender, int age, int atmosphere, int tall, long time) {
+    public Person(TALL tall, GENDER gender, AGES age, ATMOSPHERE atmosphere, long time) {
+        this.tall = tall;
         this.gender = gender;
         this.age = age;
         this.atmosphere = atmosphere;
-        this.tall = tall;
         this.time = time;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public GENDER getGender() {
+        return gender;
     }
 
-    public void setGender(int gender) {
+    public void setGender(GENDER gender) {
         this.gender = gender;
     }
 
-    public void setAtmosphere(int atmosphere) {
+    public AGES getAge() {
+        return age;
+    }
+
+    public void setAge(AGES age) {
+        this.age = age;
+    }
+
+    public ATMOSPHERE getAtmosphere() {
+        return atmosphere;
+    }
+
+    public void setAtmosphere(ATMOSPHERE atmosphere) {
         this.atmosphere = atmosphere;
     }
 
-    public void setTall(int tall) {
+    public TALL getTall() {
+        return tall;
+    }
+
+    public void setTall(TALL tall) {
         this.tall = tall;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "gender=" + keyToName(gender) +
-                ", age=" + keyToName(age) +
-                ", atmosphere=" + keyToName(atmosphere) +
-                ", tall=" + keyToName(tall) +
-                '}';
+    public int getMenu() {
+        return menu;
     }
 
-    public int getGender() {
-        return gender;
+    public void setMenu(int menu) {
+        this.menu = menu;
     }
 
     public long getTime() {
@@ -92,64 +73,51 @@ public class Person implements Serializable{
     public void setTime(long time) {
         this.time = time;
     }
-
-    public int getAge() {
-
-        return age;
-    }
-
-    public int getAtmosphere() {
-        return atmosphere;
-    }
-
-    public int getTall() {
-        return tall;
-    }
-
-    public String keyToName(int key){
-        switch(key){
-            case GENDER.MAN :
-                return "남자";
-            case GENDER.WOMAN :
-                return "여자";
-
-            case AGES.TEENAGER :
-                return "10대";
-            case AGES.YOUTH :
-                return "20대";
-            case AGES.SENIOR :
-                return "30대";
-            case AGES.MIDDLE_AGE :
-                return "40대";
-
-            case ATMOSPHERE.BRIGHT :
-                return "밝음";
-            case ATMOSPHERE.COOL :
-                return "쿨함";
-            case ATMOSPHERE.DIFFICULT :
-                return "까다로움";
-            case ATMOSPHERE.GENTLE :
-                return "젠틀친절함";
-            case ATMOSPHERE.SHY :
-                return "부끄부끄함";
-
-            case ATMOSPHERE.TALKATIVE :
-                return "수다스러움";
-
-            case TALL.FAT :
-                return "통통이상";
-            case TALL.NORMAL :
-                return "평범함";
-            case TALL.SHORT :
-                return "아담함";
-            case TALL.SKINNY :
-                return "마름";
-
-            default:
-                return "이상이상 에러에러";
-
-
-
-        }
-    }
+//
+//    public String keyToName(int key){
+//        switch(key){
+//            case GENDER.MAN :
+//                return "남자";
+//            case GENDER.WOMAN :
+//                return "여자";
+//
+//            case AGES.TEENAGER :
+//                return "10대";
+//            case AGES.YOUTH :
+//                return "20대";
+//            case AGES.SENIOR :
+//                return "30대";
+//            case AGES.MIDDLE_AGE :
+//                return "40대";
+//
+//            case ATMOSPHERE.BRIGHT :
+//                return "밝음";
+//            case ATMOSPHERE.COOL :
+//                return "쿨함";
+//            case ATMOSPHERE.DIFFICULT :
+//                return "까다로움";
+//            case ATMOSPHERE.GENTLE :
+//                return "젠틀친절함";
+//            case ATMOSPHERE.SHY :
+//                return "부끄부끄함";
+//
+//            case ATMOSPHERE.TALKATIVE :
+//                return "수다스러움";
+//
+//            case TALL.FAT :
+//                return "통통이상";
+//            case TALL.NORMAL :
+//                return "평범함";
+//            case TALL.SHORT :
+//                return "아담함";
+//            case TALL.SKINNY :
+//                return "마름";
+//
+//            default:
+//                return "이상이상 에러에러";
+//
+//
+//
+//        }
+//    }
 }

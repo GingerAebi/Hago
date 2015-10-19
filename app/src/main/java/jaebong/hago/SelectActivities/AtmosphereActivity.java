@@ -1,9 +1,15 @@
-package jaebong.hago;
+package jaebong.hago.SelectActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+
+import jaebong.hago.Enum.ATMOSPHERE;
+import jaebong.hago.Person;
+import jaebong.hago.R;
+import jaebong.hago.ResultActivity;
 
 public class AtmosphereActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,7 +34,7 @@ public class AtmosphereActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View v) {
 
-        Intent sendIntent = new Intent(AtmosphereActivity.this, TallActivity.class);
+        Intent sendIntent = new Intent(AtmosphereActivity.this, ResultActivity.class);
         switch(v.getId()){
             case R.id.layout_atmosphere_bright :
                 person.setAtmosphere(ATMOSPHERE.BRIGHT);

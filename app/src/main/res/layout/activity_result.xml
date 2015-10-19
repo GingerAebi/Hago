@@ -10,4 +10,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView_result_result"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView_result_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:onClick="mOnClick"
+        />
+
 </RelativeLayout>

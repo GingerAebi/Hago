@@ -19,7 +19,7 @@ public class SearchActivity extends AppCompatActivity {
         personList = dao.getPersonList();
 
         ListView listView = (ListView)findViewById(R.id.listView_search);
-        listView.setAdapter(new ResultListAdapter(this,R.layout.raw_person,personList));
+        listView.setAdapter(new ResultListAdapter(this,R.layout.row_person,personList));
     }
 
 
