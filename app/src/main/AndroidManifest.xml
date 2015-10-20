@@ -7,8 +7,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
-            android:name=".SelectActivities.HomeActivity"
+            android:name=".Activities.GenderAndAgeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,37 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".SelectActivities.GenderActivity"
-            android:label="@string/title_activity_gender" >
-        </activity>
-        <activity
-            android:name=".SelectActivities.AgesActivity"
-            android:label="@string/title_activity_ages" >
-        </activity>
-        <activity
-            android:name=".SelectActivities.AtmosphereActivity"
+            android:name=".Activities.AtmosphereActivity"
             android:label="@string/title_activity_atmosphere" >
         </activity>
+
         <activity
-            android:name=".SelectActivities.TallActivity"
+            android:name=".Activities.AppearanceActivity"
             android:label="@string/title_activity_tall" >
         </activity>
+
         <activity
-            android:name=".ResultActivity"
-            android:label="@string/title_activity_reslut" >
-        </activity>
-        <activity
-            android:name=".SearchActivity"
+            android:name=".Activities.ResultListActivity"
             android:label="@string/title_activity_search" >
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
-        </activity>
-        <activity
-            android:name=".SearchResultActivity"
-            android:label="@string/title_activity_search_result_actvity" >
         </activity>
     </application>
 

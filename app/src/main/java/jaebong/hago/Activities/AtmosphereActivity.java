@@ -1,15 +1,12 @@
-package jaebong.hago.SelectActivities;
+package jaebong.hago.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-
-import jaebong.hago.Enum.ATMOSPHERE;
 import jaebong.hago.Person;
 import jaebong.hago.R;
-import jaebong.hago.ResultActivity;
 
 public class AtmosphereActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,7 +18,7 @@ public class AtmosphereActivity extends AppCompatActivity implements View.OnClic
 
 
         Intent getIntent = getIntent();
-        person = (Person) getIntent.getSerializableExtra("Tall");
+        person = (Person) getIntent.getSerializableExtra("Appearance");
 
         findViewById(R.id.layout_atmosphere_bright).setOnClickListener(this);
         findViewById(R.id.layout_atmosphere_cool).setOnClickListener(this);
@@ -34,25 +31,25 @@ public class AtmosphereActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View v) {
 
-        Intent sendIntent = new Intent(AtmosphereActivity.this, ResultActivity.class);
+        Intent sendIntent = new Intent(AtmosphereActivity.this, ResultListActivity.class);
         switch(v.getId()){
             case R.id.layout_atmosphere_bright :
-                person.setAtmosphere(ATMOSPHERE.BRIGHT);
+                person.setAtmosphere("마냥 밝음");
                 break;
             case R.id.layout_atmosphere_cool :
-                person.setAtmosphere(ATMOSPHERE.COOL);
+                person.setAtmosphere("쿨 시크");
                 break;
             case R.id.layout_atmosphere_difficult :
-                person.setAtmosphere(ATMOSPHERE.DIFFICULT);
+                person.setAtmosphere("까다로운");
                 break;
             case R.id.layout_atmosphere_gentle :
-                person.setAtmosphere(ATMOSPHERE.GENTLE);
+                person.setAtmosphere("젠틀친절");
                 break;
             case R.id.layout_atmosphere_talkative :
-                person.setAtmosphere(ATMOSPHERE.TALKATIVE);
+                person.setAtmosphere("수다쟁이");
                 break;
             case R.id.layout_atmosphere_shy :
-                person.setAtmosphere(ATMOSPHERE.SHY);
+                person.setAtmosphere("부끄러운");
                 break;
 
         }

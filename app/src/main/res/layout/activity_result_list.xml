@@ -1,14 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    tools:context="jaebong.hago.SearchActivity">
+    tools:context="jaebong.hago.Activities.ResultListActivity">
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView_searchResult" />
+        android:id="@+id/listView_search" />
 
     <com.melnykov.fab.FloatingActionButton
         android:id="@+id/FAB_searchResult_add"
@@ -24,5 +23,4 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="15dp" />
-
 </RelativeLayout>

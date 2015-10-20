@@ -2,67 +2,61 @@ package jaebong.hago;
 
 import java.io.Serializable;
 
-import jaebong.hago.Enum.AGES;
-import jaebong.hago.Enum.ATMOSPHERE;
-import jaebong.hago.Enum.GENDER;
-import jaebong.hago.Enum.TALL;
-
-
 public class Person implements Serializable{
-    private GENDER gender;
-    private AGES age;
-    private ATMOSPHERE atmosphere;
-    private TALL tall;
-    private int menu;
+    private String gender;
+    private String age;
+    private String atmosphere;
+    private String appearance;
+    private String menu;
     private long time;
 
     public Person(){}
 
-    public Person(TALL tall, GENDER gender, AGES age, ATMOSPHERE atmosphere, long time) {
-        this.tall = tall;
+    public Person(String appearance, String gender, String age, String atmosphere, long time) {
+        this.appearance = appearance;
         this.gender = gender;
         this.age = age;
         this.atmosphere = atmosphere;
         this.time = time;
     }
 
-    public GENDER getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(GENDER gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public AGES getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(AGES age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
-    public ATMOSPHERE getAtmosphere() {
+    public String getAtmosphere() {
         return atmosphere;
     }
 
-    public void setAtmosphere(ATMOSPHERE atmosphere) {
+    public void setAtmosphere(String atmosphere) {
         this.atmosphere = atmosphere;
     }
 
-    public TALL getTall() {
-        return tall;
+    public String getAppearance() {
+        return appearance;
     }
 
-    public void setTall(TALL tall) {
-        this.tall = tall;
+    public void setAppearance(String appearance) {
+        this.appearance = appearance;
     }
 
-    public int getMenu() {
+    public String getMenu() {
         return menu;
     }
 
-    public void setMenu(int menu) {
+    public void setMenu(String menu) {
         this.menu = menu;
     }
 
@@ -73,51 +67,4 @@ public class Person implements Serializable{
     public void setTime(long time) {
         this.time = time;
     }
-//
-//    public String keyToName(int key){
-//        switch(key){
-//            case GENDER.MAN :
-//                return "남자";
-//            case GENDER.WOMAN :
-//                return "여자";
-//
-//            case AGES.TEENAGER :
-//                return "10대";
-//            case AGES.YOUTH :
-//                return "20대";
-//            case AGES.SENIOR :
-//                return "30대";
-//            case AGES.MIDDLE_AGE :
-//                return "40대";
-//
-//            case ATMOSPHERE.BRIGHT :
-//                return "밝음";
-//            case ATMOSPHERE.COOL :
-//                return "쿨함";
-//            case ATMOSPHERE.DIFFICULT :
-//                return "까다로움";
-//            case ATMOSPHERE.GENTLE :
-//                return "젠틀친절함";
-//            case ATMOSPHERE.SHY :
-//                return "부끄부끄함";
-//
-//            case ATMOSPHERE.TALKATIVE :
-//                return "수다스러움";
-//
-//            case TALL.FAT :
-//                return "통통이상";
-//            case TALL.NORMAL :
-//                return "평범함";
-//            case TALL.SHORT :
-//                return "아담함";
-//            case TALL.SKINNY :
-//                return "마름";
-//
-//            default:
-//                return "이상이상 에러에러";
-//
-//
-//
-//        }
-//    }
 }
